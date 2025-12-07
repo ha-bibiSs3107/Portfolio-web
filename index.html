@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/dc89b4c778.js" crossorigin="anonymous"></script>
+    <title>Portfólio - Beatriz Silva</title>
+</head>
+
+<body>
+    <header class="is-flex is-align-items-center is-justify-content-space-between section pt-4 pb-4">
+        <div class="is-flex is-align-items-center">
+            <figure class="image is-48x48 mr-4">
+                <img class="is-rounded" 
+                src="https://github.com/ha-bibiSs3107.png" 
+                alt="foto de perfil">
+            </figure>
+            <h1 class="title is-5">Beatriz Santos</h1>
+        </div>
+
+        <div>
+
+            <button class="button botao-curriculo">
+                <span class="icon">
+                    <i class="fas fa-file"></i>
+                </span>
+                <span>Baixar currículo</span>
+            </button>
+
+            <a href="https://wa.me/5511948064132" target="_blank">
+            <button class="button">
+                <span class="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </span>
+            </button>
+            </a>
+
+            <a href="https://github.com/ha-bibiSs3107" target="_blank">
+            <button class="button">
+                <span class="icon">
+                    <i class="fa-brands fa-github"></i>
+                </span>
+            </button>
+            </a>
+
+            <a href="https://www.linkedin.com/in/beatriz-da-silva-santos-078336191/" target="_blank">
+            <button class="button">
+                <span class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </span>
+            </button>
+            </a>
+
+            <div class="dropdown dropdown-linguagem">
+                <div class="dropdown-trigger">
+                    <button class="button botao-linguagem portugues" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span class="icon">
+                            <img src="./imagens/brasil.webp" alt="bandeira do brasil">                
+                        </span>
+                     </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <button class="button botao-linguagem ingles">
+                        <span class="icon">
+                            <img src="./imagens/bandeira eua.png" alt="bandeira dos usa">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner section is-flex is-align-items-center">
+            <div class="container-sobre-mim">
+                <p id="titulo-banner" class="title mb-3">O espírito humano precisa prevalecer sobre a tecnologia</p>
+                <p id="descricao-banner" class="subtitle">Profissional dedicada e entusiasta da tecnologia, iniciando na área em busca de novos desafios. 
+                e oportunidades para aplicar e aprimorar minhas habilidades e conhecimentos. 
+                Cursando Front End pelo Instituto PROA em parceria com o  Serasa Experian, aprendendo cada vez mais de forma a estar preparada para contribuir em projetos que demandem expertise em design de sistemas e tecnologias web.
+                </p>
+
+            <div>
+                <button id="botao-projeto-banner" class="button is-normal mr-5">Projetos</button>
+                <button id="botao-tecnologias-banner" class="button is-normal">Tecnologias</button>
+            </div>
+            </div>
+        </section>
+
+        <section class="section container-tecnologias">
+            <h3 id="titulo-tecnologias" class="title is-4">Tecnologias em que eu desenvolvo</h3>
+        
+        <div>
+        <div class="container-skills">
+            <div class="box is-flex is-justify-content-center">
+                <img src="./imagens/html.svg" alt="html">
+            </div>
+
+            <div class="box is-flex is-justify-content-center">
+                <img src="./imagens/css.svg" alt="css">
+            </div>
+
+            <div class="box is-flex is-justify-content-center">
+                <img src="./imagens/js.svg" alt="js">
+            </div>
+
+            <div class="box is-flex is-justify-content-center">
+                <img src="./imagens/figma.svg" alt="figma">
+            </div>
+        </div>
+
+        <div class="container-skills">
+            <div class="box is-flex is-justify-content-center">
+                <img src="./imagens/vercel.svg" alt="vercel">
+            </div>
+
+            <div class="box is-flex is-justify-content-center">
+                <img src="./imagens/api.png" alt="api">
+            </div>
+
+            <div class="box is-flex is-justify-content-center">
+                <img src="./imagens/bulma.svg" alt="bulma">
+            </div>
+
+            <div class="box is-flex is-justify-content-center">
+                <img src="./imagens/trello.jpg" alt="trello">
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <section class="is-flex container-contato-projeto mb-6">
+            <div class="container-bater-papo">
+                <h5 id="titulo-bater-papo" class="title is-6">Vamos bater um papo?</h5>
+
+                <p id="descricao-bater-papo" class="is-size-6 mb-5">Compartilho meus projetos e outros processos do dia a dia no LinkedIn! Sempre disponível para uma boa troca de ideias e oportunidades de colaboração.</p>
+
+                <a href="https://www.linkedin.com/in/beatriz-da-silva-santos-078336191/">
+                <button id="botao-bater-papo" class="button is-normal">Acessar meu perfil do LinkedIn</button>
+                </a>
+            </div>
+
+            <div class="container-projetos pr-3 pl-3">
+                <h6 id="titulo-projetos" class="title is-6">Projetos</h6>
+                <h5 id="subtitulo-projetos" class="title is-4">Projetos que eu mais me orgulho na minha trajetória</h5>
+            
+                <section class="container-card-projetos">
+                    <div class="card-projeto">
+                        <h6 class="title is-5">Site de filmes e séries</h6>
+                        <p>Tecnologias: <span class="span-linguagens">HTML, CSS</span></p>
+                        <p class="mt-5 mb-5">Primeiro projeto criado em conjunto, com o professor Vitor Moutim e turma, no curso de Front-End promovido pelo Proa e Serasa.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://ha-bibiss3107.github.io/Filmes-e-Series/">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-projeto">
+                        <h6 class="title is-5">Atividades em portugol</h6>
+                        <p>Tecnologias: <span class="span-linguagens">Portugol</span></p>
+                        <p class="mt-5 mb-5">Exercícios de portugol para aprender lógica de programação: uma prévia para JS.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://github.com/ha-bibiSs3107/Projetos-Portugol">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-projeto">
+                        <h6 class="title is-5">Senior Bank</h6>
+                        <p>Tecnologias: <span class="span-linguagens">HTML, CSS, JS, PHP</span></p>
+                        <p class="mt-5 mb-5">Projeto final do curso Transforme-se, projetado pelo PROA em parceria com a Serasa, realizado em grupo. Protótipo de um banco simples, objetivo e intuitivo, que facilite a experiência do usuário.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://seniorbank-ecru.vercel.app/">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card-projeto">
+                        <h6 class="title is-5">To Do List</h6>
+                        <p>Tecnologias: <span class="span-linguagens">HTML, CSS, JS</span></p>
+                        <p class="mt-5 mb-5">Criação de uma To Do List (lista de afazeres) para praticar fórmula do JS.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://ha-bibiss3107.github.io/ToDo-List/">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-projeto">
+                        <h6 class="title is-5">Clone Youtube</h6>
+                        <p>Tecnologias: <span class="span-linguagens">HTML, CSS</span></p>
+                        <p class="mt-5 mb-5">Atividade de clonar o layout do site do Youtube para praticar os conhecimentos em HTML e CSS.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://ha-bibiss3107.github.io/Clone-Youtube/">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-projeto">
+                        <h6 class="title is-5">Clone Tesla</h6>
+                        <p>Tecnologias: <span class="span-linguagens">HTML, CSS</span></p>
+                        <p class="mt-5 mb-5">Atividade de clonar o layout do site da Tesla para praticar os conhecimentos em HTML e CSS.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://ha-bibiss3107.github.io/Clone-Tesla/">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-projeto">
+                        <h6 class="title is-5">Clone Spotify</h6>
+                        <p>Tecnologias: <span class="span-linguagens">HTML, CSS</span></p>
+                        <p class="mt-5 mb-5">Atividade de clonar o layout do site do Spotify para praticar os conhecimentos em HTML e CSS.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://ha-bibiss3107.github.io/Clone-Spotify/">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-projeto">
+                        <h6 class="title is-5">Clone Tinder</h6>
+                        <p>Tecnologias: <span class="span-linguagens">HTML, CSS</span></p>
+                        <p class="mt-5 mb-5">Atividade de clonar o layout do aplicativo Tinder para praticar os conhecimentos em HTML e CSS.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://ha-bibiss3107.github.io/Clone-Tinder/">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-projeto">
+                        <h6 class="title is-5">Clone Starbucks</h6>
+                        <p>Tecnologias: <span class="span-linguagens">HTML, CSS</span></p>
+                        <p class="mt-5 mb-5">Atividade de criar um poster no estilo do layout do Starbucks para praticar os conhecimentos em HTML e CSS.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://ha-bibiss3107.github.io/Clone-Starbucks/">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-projeto">
+                        <h6 class="title is-5">Clone Netflix</h6>
+                        <p>Tecnologias: <span class="span-linguagens">HTML, CSS</span></p>
+                        <p class="mt-5 mb-5">Atividade de clone do layout do site da Netflix para praticar os conhecimentos em HTML e CSS.</p>
+                        <div class="is-flex">
+                            <button class="button mr-4">Repositório</button>
+                            <a href="https://ha-bibiss3107.github.io/Clone-Netflix/?authuser=0">
+                            <button class="button">Aplicação</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                </section>
+            
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="section is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+        <button class="button botao-inicio">
+            <span class="icon is-small">
+                <i class="fas fa-arrow-up"></i>
+            </span>
+        </button>
+
+        <p>Desenvolvido por Beatriz Santos</p>
+        <p>Obrigado por acessar!</p>
+    </footer>
+
+    <script src="./js/script1.js" type="module"></script>
+</body>
+</html>

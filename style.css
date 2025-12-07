@@ -1,0 +1,328 @@
+:root{
+    --cor-principal: blueviolet;
+}
+
+header, .banner, .container-tecnologias, .container-contato-projeto{
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+}
+
+.container-sobre-mim{
+    width: 60%;
+}
+
+.container-sobre-mim p{
+    color: white;
+}
+
+.banner{
+    height: 85dvh;
+    background-color: var(--cor-principal);
+}
+
+.container-skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.container-skills div{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.container-skills div img{
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    background-color: var(--cor-principal);
+    color: white;
+    font-size: 20px;
+}
+
+.botao-inicio{
+    background-color: transparent;
+    border: none;
+}
+
+.container-contato-projeto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-bater-papo{
+    width: 35%;
+}
+
+.container-projetos{
+    width: 50%;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.container-projetos::-webkit-scrollbar{
+    width: 3px;
+}
+
+.container-contato-projeto::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.container-contato-projeto::-webkit-scrollbar-thumb{
+    background-color: var(--cor-principal);
+    border-radius: 10px;
+}
+
+.container-contato-projeto::-webkit-scrollbar-thumb:hover{
+    background: #8a23b3;
+}
+
+.card-projeto .span-linguagens{
+    background-color: #a32cd682;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container-card-projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.botao-curriculo-background{
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.botao-linguagem{
+    width: 100px;
+}
+
+/* ============================================ */
+/* RESPONSIVIDADE PARA MOBILE */
+/* ============================================ */
+
+/* Tablets (até 768px) */
+@media screen and (max-width: 768px) {
+    header, .banner, .container-tecnologias, .container-contato-projeto{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    
+    .container-sobre-mim{
+        width: 100%;
+    }
+    
+    .banner{
+        height: auto;
+        min-height: 70vh;
+    }
+    
+    .container-skills{
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .container-skills div{
+        width: 45%;
+        min-width: 150px;
+    }
+    
+    .container-contato-projeto{
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .container-bater-papo{
+        width: 100%;
+    }
+    
+    .container-projetos{
+        width: 100%;
+        height: auto;
+        max-height: 600px;
+    }
+    
+    #titulo-banner{
+        font-size: 1.75rem;
+    }
+    
+    #descricao-banner{
+        font-size: 1rem;
+    }
+}
+
+/* Smartphones (até 480px) */
+@media screen and (max-width: 480px) {
+    header, .banner, .container-tecnologias, .container-contato-projeto{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    /* HEADER */
+    header{
+        flex-direction: column !important;
+        gap: 1rem;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    
+    header > div:first-child{
+        justify-content: center !important;
+    }
+    
+    header > div:last-child{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    /* Esconder texto do botão currículo em mobile */
+    .botao-curriculo span:last-child{
+        display: none;
+    }
+    
+    .botao-linguagem{
+        width: auto;
+    }
+    
+    /* BANNER */
+    .container-sobre-mim{
+        width: 100%;
+    }
+    
+    #titulo-banner{
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+    
+    #descricao-banner{
+        font-size: 0.95rem !important;
+        text-align: justify;
+    }
+    
+    .container-sobre-mim > div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    #botao-projeto-banner, #botao-tecnologias-banner{
+        width: 100%;
+        margin: 0 !important;
+    }
+    
+    /* TECNOLOGIAS */
+    .container-skills{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container-skills div{
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .container-skills div img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    #titulo-tecnologias{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    /* CONTATO E PROJETOS */
+    .container-bater-papo{
+        text-align: center;
+    }
+    
+    #titulo-bater-papo, #titulo-projetos{
+        font-size: 1rem;
+    }
+    
+    #subtitulo-projetos{
+        font-size: 1.25rem;
+    }
+    
+    #botao-bater-papo{
+        width: 100%;
+    }
+    
+    .container-projetos{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .card-projeto{
+        padding: 1.25rem;
+    }
+    
+    .card-projeto .title{
+        font-size: 1.15rem;
+    }
+    
+    .card-projeto p{
+        font-size: 0.9rem;
+    }
+    
+    .card-projeto .is-flex{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .card-projeto .button{
+        width: 100%;
+        margin: 0 !important;
+    }
+    
+    .container-card-projetos{
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    /* FOOTER */
+    footer{
+        font-size: 1rem;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    
+    footer p{
+        font-size: 0.9rem;
+    }
+}
+
+/* Smartphones muito pequenos (até 360px) */
+@media screen and (max-width: 360px) {
+    header, .banner, .container-tecnologias, .container-contato-projeto{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    #titulo-banner{
+        font-size: 1.25rem !important;
+    }
+    
+    #descricao-banner{
+        font-size: 0.875rem !important;
+    }
+    
+    .container-skills div img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .card-projeto{
+        padding: 1rem;
+    }
+}
