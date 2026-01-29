@@ -4,14 +4,14 @@ const textosPortugues = {
       curriculo: "Baixar currículo"
     }
   },
-  banner: {
-    titulo: "Criando experiências por meio da tecnologia",
-    descricao: "Profissional dedicado e entusiasta da tecnologia, buscando constantemente novos desafios e oportunidades para aplicar e aprimorar minhas habilidades. Formado em Programador Web Java pelo Instituto PROA e Desenvolvedor Full Stack pela Trybe, e atualmente cursando Análise e Desenvolvimento de Sistemas na FIAP, estou preparado para contribuir em projetos que demandem expertise em desenvolvimento de sistemas e tecnologias web.",
+ banner: {
+    titulo: "O espírito humano precisa prevalecer sobre a tecnologia",
+    descricao: "Profissional dedicada e entusiasta da tecnologia, iniciando na área em busca de novos desafios e oportunidades para aplicar e aprimorar minhas habilidades e conhecimentos. Cursando Front End pelo Instituto PROA em parceria com o Serasa Experian, aprendendo cada vez mais de forma a estar preparada para contribuir em projetos que demandem expertise em design de sistemas e tecnologias web.",
     botoes: {
       projetos: "Projetos",
       tecnologias: "Tecnologias"
     }
-  },
+},
   tecnologias: {
     titulo: "Tecnologias em que eu desenvolvo",
   },
@@ -25,36 +25,99 @@ const textosPortugues = {
     subtitulo: "Projetos que eu mais me orgulho na minha trajetória.",
     lista: [
       {
-        nome: "Caixa Eletrônico",
-        tecnologias: "Angular, ASP.NET, MySQL, JWT, SASS",
-        descricao: "Desenvolvido para o teste técnico do Itaú, este projeto fullstack simula as funcionalidades de um caixa eletrônico, permitindo saques, depósitos, transferências, consulta de extrato, e gerenciando contas correntes e poupanças.",
+        nome: "Site de filmes e séries",
+        tecnologias: "HTML, CSS",
+        descricao: "Primeiro projeto criado em conjunto, com o professor Vitor Moutim e turma, no curso de Front-End promovido pelo Proa e Serasa.",
         botoes: {
           repositorio: "Repositório",
           aplicacao: "Aplicação"
         }
       },
       {
-        nome: "Caixa Eletrônico",
-        tecnologias: "Angular, ASP.NET, MySQL, JWT, SASS",
-        descricao: "Desenvolvido para o teste técnico do Itaú, este projeto fullstack simula as funcionalidades de um caixa eletrônico, permitindo saques, depósitos, transferências, consulta de extrato, e gerenciando contas correntes e poupanças.",
+        nome: "Atividades em portugol",
+        tecnologias: "Portugol",
+        descricao: "Exercícios de portugol para aprender lógica de programação: uma prévia para JS.",
         botoes: {
           repositorio: "Repositório",
           aplicacao: "Aplicação"
         }
       },
       {
-        nome: "Caixa Eletrônico",
-        tecnologias: "Angular, ASP.NET, MySQL, JWT, SASS",
-        descricao: "Desenvolvido para o teste técnico do Itaú, este projeto fullstack simula as funcionalidades de um caixa eletrônico, permitindo saques, depósitos, transferências, consulta de extrato, e gerenciando contas correntes e poupanças.",
+        nome: "Senior Bank",
+        tecnologias: "HTML, CSS, JS, PHP",
+        descricao: "Projeto final do curso Transforme-se, projetado pelo PROA em parceria com a Serasa, realizado em grupo. Protótipo de um banco simples, objetivo e intuitivo, que facilite a experiência do usuário.",
         botoes: {
           repositorio: "Repositório",
           aplicacao: "Aplicação"
         }
-      }
+      },
+      {
+        nome: "To Do List",
+        tecnologias: "HTML, CSS, JS",
+        descricao: "Criação de uma To Do List (lista de afazeres) para praticar fórmula do JS.",
+        botoes: {
+          repositorio: "Repositório",
+          aplicacao: "Aplicação"
+        }
+      },
+      {
+        nome: "Clone Youtube",
+        tecnologias: "HTML, CSS",
+        descricao: "Atividade de clonar o layout do site do Youtube para praticar os conhecimentos em HTML e CSS.",
+        botoes: {
+          repositorio: "Repositório",
+          aplicacao: "Aplicação"
+        }
+      },
+      {
+        nome: "Clone Tesla",
+        tecnologias: "HTML, CSS",
+        descricao: "Atividade de clonar o layout do site da Tesla para praticar os conhecimentos em HTML e CSS.",
+        botoes: {
+          repositorio: "Repositório",
+          aplicacao: "Aplicação"
+        }
+      },
+      {
+        nome: "Clone Spotify",
+        tecnologias: "HTML, CSS",
+        descricao: "Atividade de clonar o layout do site do Spotify para praticar os conhecimentos em HTML e CSS.",
+        botoes: {
+          repositorio: "Repositório",
+          aplicacao: "Aplicação"
+        }
+      },
+      {
+        nome: "Clone Tinder",
+        tecnologias: "HTML, CSS",
+        descricao: "Atividade de clonar o layout do aplicativo Tinder para praticar os conhecimentos em HTML e CSS.",
+        botoes: {
+          repositorio: "Repositório",
+          aplicacao: "Aplicação"
+        }
+      },
+      {
+        nome: "Clone Starbucks",
+        tecnologias: "HTML, CSS",
+        descricao: "Atividade de clonar o layout do site do Starbucks para praticar os conhecimentos em HTML e CSS.",
+        botoes: {
+          repositorio: "Repositório",
+          aplicacao: "Aplicação"
+        }
+      },
+      {
+        nome: "Clone Netflix",
+        tecnologias: "HTML, CSS",
+        descricao: "Atividade de clonar o layout do site da Netflix para praticar os conhecimentos em HTML e CSS.",
+        botoes: {
+          repositorio: "Repositório",
+          aplicacao: "Aplicação"
+        }
+      },
     ]
   },
   footer: {
-    desenvolvedor: "Desenvolvido por Vitor Moutim 🧑🏻‍💻",
+    desenvolvedor: "Desenvolvido por Beatriz Santos",
     agradecimento: "Obrigado por acessar!"
   }
 };

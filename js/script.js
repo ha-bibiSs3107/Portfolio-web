@@ -33,7 +33,7 @@ function trocarLinguagem(linguagem) {
         spanTexto.textContent = dados.header.botoes.curriculo;
     }
 
-    tituloBanner.textContent = dados.banner.titlo;
+    tituloBanner.textContent = dados.banner.titulo;
     descricaoBanner.textContent = dados.banner.descricao;
     botaoProjetoBanner.textContent = dados.banner.botoes.projetos;
     botaoTecnologiasBanner.textContent = dados.banner.botoes.tecnologias;
