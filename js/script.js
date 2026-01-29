@@ -49,20 +49,24 @@ function trocarLinguagem(linguagem) {
     containerProjetos.innerHTML = '';
 
     dados.projetos.lista.forEach((projeto) => {
-        const div = document.createElement('div');
-        div.classList.add('card-projeto');
-        div.innerHTML = `
-            <h6 class="title is-5">${projeto.nome}</h6>
-            <p>Tecnologias: <span class="span-linguagens">${projeto.tecnologias}</span></p>
-            <p class="mt-5 mb-5">${projeto.descricao}</p>
-            <div class="is-flex">
+    const div = document.createElement('div');
+    div.classList.add('card-projeto');
+    div.innerHTML = `
+        <h6 class="title is-5">${projeto.nome}</h6>
+        <p>Tecnologias: <span class="span-linguagens">${projeto.tecnologias}</span></p>
+        <p class="mt-5 mb-5">${projeto.descricao}</p>
+        <div class="is-flex">
+            <a href="${projeto.repositorio}" target="_blank">
                 <button class="button mr-4">${projeto.botoes.repositorio}</button>
+            </a>
+            <a href="${projeto.aplicacao}" target="_blank">
                 <button class="button">${projeto.botoes.aplicacao}</button>
-            </div>
-        `;
+            </a>
+        </div>
+    `;
 
-        containerProjetos.appendChild(div);
-    });
+    containerProjetos.appendChild(div);
+});
 }
 
 // Event listener para download do currículo
@@ -116,3 +120,34 @@ botaoLinguagem.addEventListener('click', function() {
 
 // Iniciar em português
 trocarLinguagem('portugues');
+
+// ========== ALTERNÂNCIA DE TEMA ========== 
+const botaoTema = document.querySelector('.botao-tema');
+const iconeTemaBotao = botaoTema.querySelector('i');
+
+// Verificar se há preferência salva
+const temaSalvo = localStorage.getItem('tema');
+if (temaSalvo === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    iconeTemaBotao.classList.remove('fa-moon');
+    iconeTemaBotao.classList.add('fa-sun');
+}
+
+// Event listener para alternar tema
+botaoTema.addEventListener('click', function() {
+    const temaAtual = document.documentElement.getAttribute('data-theme');
+    
+    if (temaAtual === 'dark') {
+        // Mudar para modo claro
+        document.documentElement.removeAttribute('data-theme');
+        iconeTemaBotao.classList.remove('fa-sun');
+        iconeTemaBotao.classList.add('fa-moon');
+        localStorage.setItem('tema', 'light');
+    } else {
+        // Mudar para modo escuro
+        document.documentElement.setAttribute('data-theme', 'dark');
+        iconeTemaBotao.classList.remove('fa-moon');
+        iconeTemaBotao.classList.add('fa-sun');
+        localStorage.setItem('tema', 'dark');
+    }
+});

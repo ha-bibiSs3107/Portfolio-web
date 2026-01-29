@@ -327,3 +327,96 @@ footer{
         padding: 1rem;
     }
 }
+
+/* ========== VARIÁVEIS DE TEMA ========== */
+:root {
+  /* Modo Claro (padrão) */
+  --bg-primary: #ffffff;
+  --bg-secondary: rgb(208,158,225);
+  --text-primary: #363636;
+  --text-secondary: #4a4a4a;
+  --border-color: #dbdbdb;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --card-bg: #f1f1f1;          
+  --button-bg: #f1f1f1;         
+  --button-hover: #e0e0e0;      
+}
+
+[data-theme="dark"] {
+  /* Modo Escuro */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: blueviolet;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #404040;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --card-bg: #2d2d2d;          
+  --button-bg: #363636;         
+  --button-hover: #404040;
+}
+
+/* ========== APLICAR VARIÁVEIS ========== */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.title {
+  color: var(--text-primary) !important;
+}
+
+.subtitle {
+  color: var(--text-secondary) !important;
+}
+
+.box {
+  background-color: var(--card-bg) !important;  
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: background-color 0.3s ease;
+}
+
+.card-projeto {
+  background-color: var(--card-bg);  
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: background-color 0.3s ease;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 0.2rem;
+  color: var(--text-secondary);
+}
+
+.button {
+  background-color: var(--button-bg) !important;  
+  color: var(--text-primary) !important;
+  border-color: var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--button-hover) !important; 
+}
+
+footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+.banner {
+  background-color: var(--bg-secondary);
+}
+
+.container-bater-papo,
+.container-projetos {
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+}
